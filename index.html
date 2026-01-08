@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anand Chavan — Research</title>
+
+  <style>
+    :root {
+      --bg: #faf7f2;
+      --ink: #151515;
+      --muted: #6b6b6b;
+      --line: #d8d2c8;
+      --accent: #8b5e34;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: "Source Sans 3", "Work Sans", "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    /* Sections */
+    section {
+      padding: 40px 10% 20px;
+    }
+
+    section + section {
+      border-top: 1px solid var(--line);
+      padding-top: 50px;
+    }
+    .wrap { width: min(900px, 100%); margin: 0 auto; }
+    .title {
+      margin: 0 0 20px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      text-align: left;
+      color: var(--accent);
+    }
+
+    .home {
+      display: flex;
+      align-items: flex-start;
+      gap: 40px;
+    }
+    .col { color: var(--muted); font-size: 16px; }
+
+    .name {
+      font-size: 38px;
+      margin: 0 0 10px;
+      color: var(--ink);
+      font-family: "Cormorant Garamond", "Times New Roman", serif;
+      font-weight: 600;
+    }
+    .subtitle {
+      margin: 0 0 15px;
+      color: var(--muted);
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    .photo {
+      width: 220px;
+      height: 300px;
+      object-fit: cover;
+      object-position: 85% center;
+      background: var(--line);
+      border: 1px solid var(--line);
+    }
+
+    ul.clean {
+      margin: 10px 0 0;
+      padding: 0 0 0 20px;
+    }
+    ul.clean li { margin: 5px 0; }
+
+    .muted { color: var(--muted); }
+    .small { font-size: 13px; color: var(--muted); }
+    .kicker {
+      font-weight: 700;
+      color: var(--ink);
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+      padding-bottom: 2px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid var(--accent);
+    }
+    a:hover { color: var(--ink); border-bottom-color: var(--ink); }
+    .pub-link { border-bottom: none; }
+    .pub-link:hover { border-bottom: none; }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      section { padding: 32px 6% 18px; }
+      .home { flex-direction: column; }
+      .photo { width: 100%; height: 360px; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HOME -->
+  <section id="home">
+    <div class="wrap">
+      <h2 class="title">Home</h2>
+      <div class="home">
+        <div class="col">
+          <h1 class="name">Anand Chavan</h1>
+          <p class="subtitle">Doctoral student (Mathematics) — Jagiellonian University, Kraków, Poland</p>
+          <p>I am a PhD student at the Jagiellonian University in Kraków. My research interests include several complex variables, invariant distances and metrics, and applications of Lempert’s theory.</p>
+          <ul class="clean">
+            <li><span class="kicker">Advisor:</span> <a href="https://wlodzimierz-zwonek.u.matinf.uj.edu.pl/">Prof. Włodzimierz Zwonek</a></li>
+            <li><span class="kicker">Funding:</span> NCN PRELUDIUM BIS 3</li>
+          </ul>
+        </div>
+        <img class="photo" src="WhatsApp Image 2026-01-08 at 22.29.02.jpeg" alt="Anand Chavan portrait" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ACADEMIC -->
+  <section id="academic">
+    <div class="wrap">
+      <h2 class="title">Academic</h2>
+      <div class="col">
+        <div class="kicker">Education</div>
+        <ul class="clean">
+          <li><span class="kicker">Ph.D. in Mathematics</span>, Jagiellonian University, Kraków (Nov 2022 – Present) — Advisor: <a href="https://wlodzimierz-zwonek.u.matinf.uj.edu.pl/">Prof. Włodzimierz Zwonek</a></li>
+          <li><span class="kicker">BS-MS (Mathematics Major)</span>, IISER Thiruvananthapuram, India (Aug 2017 – Apr 2022) — Advisor: <a href="https://www.iisertvm.ac.in/faculty/shrihari">Dr Shrihari Sridharan</a>; Thesis: Dirichlet Boundary Value Problem in One and Several Complex Variables</li>
+        </ul>
+        <div class="kicker">Publications and Preprints</div>
+        <ul class="clean">
+          <li><span class="kicker"><a class="pub-link" href="https://doi.org/10.1016/j.bulsci.2024.103528">Isometries in the diamond</a></span>, Bull. Sci. Math. 197 (2024) 103528 (with Włodzimierz Zwonek)</li>
+          <li><span class="kicker"><a class="pub-link" href="https://arxiv.org/abs/2509.05480">Rigidity of Kobayashi isometries</a></span>, Preprint, arXiv:2509.05480 (2025)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="wrap">
+      <h2 class="title">Experience</h2>
+      <div class="col">
+        <div class="kicker">Talks Given</div>
+        <ul class="clean">
+          <li>Lightning Talk: Holomorphicity of Kobayashi Isometry — Rényi Institute, Budapest, Hungary (Aug 2025)</li>
+          <li>Talk: Holomorphicity of Kobayashi Isometry — Banach Center, Bedlewo, Poland (Jun 2025)</li>
+          <li>Flash Talk: Isometries of Diamond — Junior Workshop in Several Complex Variables, UW–Madison, USA (Jun 2024)</li>
+          <li>Lecture series: From Single Complex Variables to Several Complex Variables — SGGS Institute of Engineering and Technology, Nanded, India (Jun–Jul 2022)</li>
+        </ul>
+        <div class="kicker">Conferences & Workshops</div>
+        <ul class="clean">
+          <li>Complex Analysis and Geometry – XXVII — Trento, Italy (Sep 2025)</li>
+          <li>Summer School I: Invitation to Complex Geometry — Rényi Institute, Budapest, Hungary (Aug 2025)</li>
+          <li>Complex Analysis, Geometry, and Dynamics IV — Portorož, Slovenia (Jun 2025)</li>
+          <li>Invariant Metrics in Complex Analysis — Banach Center, Bedlewo, Poland (Jun 2025)</li>
+          <li>Bench Math Session — Jagiellonian University, Kraków, Poland (Feb 2025)</li>
+        </ul>
+        <div class="kicker">Internships</div>
+        <ul class="clean">
+          <li>Tor Vergata, Rome, Italy — Foreign fellowship supported by NAWA Preludium Bis 3 (Jan–Mar 2025); Mentor: <a href="https://www.mat.uniroma2.it/~fbracci/">Prof. Filippo Bracci</a></li>
+          <li>IISER Mohali, India — Online reading project on several complex variables (Jul–Aug 2022); Mentor: <a href="https://sites.google.com/site/ratnapalmath">Dr Ratna Pal</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS & AWARDS -->
+  <!-- CONTACT -->
+  <section id="links">
+    <div class="wrap">
+      <h2 class="title">Useful Links</h2>
+      <div class="col">
+        <ul class="clean">
+          <li><a href="https://www.abeslikas.com/bench-math-session-2026">Bench Math Session 2026</a></li>
+          <li><a href="https://sites.google.com/view/focaha/events">FOCHA</a></li>
+          <li><a href="https://www2.im.uj.edu.pl/katedry/complex/sem_announce_en.html">Seminar on Complex Analysis - Geometric Function Theory [UJ]</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <h2 class="title">Contact</h2>
+      <div class="col">
+        <ul class="clean">
+          <li><span class="kicker">Location:</span> Kraków, Poland</li>
+          <li><span class="kicker">Email:</span> <a href="mailto:anand.chavan@doctoral.uj.edu.pl">anand.chavan@doctoral.uj.edu.pl</a></li>
+          <li><span class="kicker">Address:</span> 0068, Lojasiewicza 6, Faculty of Mathematics and Computer Science, Jagiellonian University, Kraków 30-348, Poland</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
